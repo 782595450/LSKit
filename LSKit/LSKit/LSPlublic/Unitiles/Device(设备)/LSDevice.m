@@ -138,9 +138,9 @@
     dispatch_once(&onceToken, ^{
         infoDictionary = [[NSBundle mainBundle] infoDictionary];
         version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
-        if ([version componentsSeparatedByString:@"."].count - 1 == 1) {
-            version = [version stringByAppendingString:@".0"];
-        }
+//        if ([version componentsSeparatedByString:@"."].count - 1 == 1) {
+//            version = [version stringByAppendingString:@".0"];
+//        }
     });
     return version;
 }
@@ -155,15 +155,6 @@
     });
     return bundleVersion;
 }
-
-//+ (NSString *)getIdfa {
-//    static dispatch_once_t onceToken;
-//    static NSString *idfa = nil;
-//    dispatch_once(&onceToken, ^{
-//        idfa = [NSString stringWithFormat:@"%@", [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
-//    });
-//    return idfa;
-//}
 
 + (NSString *)getIdfv {
     static dispatch_once_t onceToken;

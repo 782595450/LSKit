@@ -42,7 +42,7 @@
 		1835E40520BFD80E00259471 /* LSLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSLanguage.m; sourceTree = "<group>"; };
 		1835E40B20BFDEC500259471 /* UIColor+LSAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LSAdd.h"; sourceTree = "<group>"; };
 		1835E40C20BFDEC500259471 /* UIColor+LSAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LSAdd.m"; sourceTree = "<group>"; };
-		1835E40E20BFE05C00259471 /* LSColorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSColorManager.h; sourceTree = "<group>"; };
+		1835E40E20BFE05C00259471 /* LSColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSColorHeader.h; sourceTree = "<group>"; };
 		1835E41220BFE27F00259471 /* UIView+LSAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LSAdd.h"; sourceTree = "<group>"; };
 		1835E41320BFE27F00259471 /* UIView+LSAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LSAdd.m"; sourceTree = "<group>"; };
 		1835E41520BFE38400259471 /* UIButton+LSAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+LSAdd.h"; sourceTree = "<group>"; };
@@ -53,6 +53,7 @@
 		1835E41E20BFE6E900259471 /* LSAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAccountModel.m; sourceTree = "<group>"; };
 		1835E42020BFE77700259471 /* LSAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAccountTool.h; sourceTree = "<group>"; };
 		1835E42120BFE77700259471 /* LSAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAccountTool.m; sourceTree = "<group>"; };
+		1835E42320BFF37B00259471 /* LSFileDirectoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFileDirectoryHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				1835E3F920BFA34F00259471 /* LSKitMacros.h */,
-				1835E40E20BFE05C00259471 /* LSColorManager.h */,
+				1835E40E20BFE05C00259471 /* LSColorHeader.h */,
+				1835E42320BFF37B00259471 /* LSFileDirectoryHeader.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";

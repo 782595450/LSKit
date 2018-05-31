@@ -7,13 +7,13 @@
 //
 
 #import "LSAccountTool.h"
+#import "LSFileDirectoryHeader.h"
 
-//账号保存地址
-#define LSAccountFile [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"LSAccount.data"]
 
 @implementation LSAccountTool
 
 + (BOOL)saveLSAccount:(LSAccountModel *)account{
+    [self createAccountFile];
     return  [NSKeyedArchiver archiveRootObject:account toFile:LSAccountFile];
     
 }
@@ -34,10 +34,20 @@
 }
 
 + (BOOL)deleteLSAccount{
-    if (!LSAccountFile) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:LSAccountFile]) {
         return NO;
     }else{
         return [[NSFileManager defaultManager] removeItemAtPath:LSAccountFile error:nil];
+    }
+    
+}
+
+// 创建账号保存地址
++ (void)createAccountFile{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:LSAccountFile]) {
+        [fileManager createDirectoryAtPath:LSAccountFile withIntermediateDirectories:YES attributes:nil error:nil];
     }
     
 }
