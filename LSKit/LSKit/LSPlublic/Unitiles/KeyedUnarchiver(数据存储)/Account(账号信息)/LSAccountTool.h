@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LSAccountModel.h"
 
+
 @interface LSAccountTool : NSObject
 /**
  *  存储账号信息与刷新

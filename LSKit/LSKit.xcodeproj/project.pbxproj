@@ -21,6 +21,7 @@
 		1835E41A20BFE3F400259471 /* UILabel+LSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1835E41920BFE3F400259471 /* UILabel+LSAdd.m */; };
 		1835E41F20BFE6E900259471 /* LSAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1835E41E20BFE6E900259471 /* LSAccountModel.m */; };
 		1835E42220BFE77700259471 /* LSAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1835E42120BFE77700259471 /* LSAccountTool.m */; };
+		949F11AA20E7281100D13E88 /* LSPublicMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 949F11A920E7281100D13E88 /* LSPublicMethods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		1835E42020BFE77700259471 /* LSAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAccountTool.h; sourceTree = "<group>"; };
 		1835E42120BFE77700259471 /* LSAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAccountTool.m; sourceTree = "<group>"; };
 		1835E42320BFF37B00259471 /* LSFileDirectoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFileDirectoryHeader.h; sourceTree = "<group>"; };
+		949F11A820E7281100D13E88 /* LSPublicMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSPublicMethods.h; sourceTree = "<group>"; };
+		949F11A920E7281100D13E88 /* LSPublicMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSPublicMethods.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,7 @@
 		1835E3FC20BFA49100259471 /* Unitiles */ = {
 			isa = PBXGroup;
 			children = (
+				949F11A720E727FC00D13E88 /* Publicmethods(公共方法) */,
 				1835E41B20BFE6AA00259471 /* KeyedUnarchiver(数据存储) */,
 				1835E41120BFE26800259471 /* Extension(控件) */,
 				1835E40720BFDE3F00259471 /* Color(颜色) */,
@@ -189,6 +193,15 @@
 				1835E41E20BFE6E900259471 /* LSAccountModel.m */,
 			);
 			path = "Account(账号信息)";
+			sourceTree = "<group>";
+		};
+		949F11A720E727FC00D13E88 /* Publicmethods(公共方法) */ = {
+			isa = PBXGroup;
+			children = (
+				949F11A820E7281100D13E88 /* LSPublicMethods.h */,
+				949F11A920E7281100D13E88 /* LSPublicMethods.m */,
+			);
+			path = "Publicmethods(公共方法)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 			files = (
 				1835E41F20BFE6E900259471 /* LSAccountModel.m in Sources */,
 				1835E41720BFE38400259471 /* UIButton+LSAdd.m in Sources */,
+				949F11AA20E7281100D13E88 /* LSPublicMethods.m in Sources */,
 				1835E42220BFE77700259471 /* LSAccountTool.m in Sources */,
 				1835E40D20BFDEC500259471 /* UIColor+LSAdd.m in Sources */,
 				1835E40220BFCE5F00259471 /* LSDevice.m in Sources */,
@@ -411,15 +425,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DWS6Q6495N;
+				DEVELOPMENT_TEAM = A4LWFHDJZJ;
 				INFOPLIST_FILE = LSKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Price-Lai.LSKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.auvi.HTJUFO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -428,15 +444,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DWS6Q6495N;
+				DEVELOPMENT_TEAM = A4LWFHDJZJ;
 				INFOPLIST_FILE = LSKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Price-Lai.LSKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.auvi.HTJUFO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
